@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "description": "大文件切片上传",
   "scripts": {
-    "bootstrap": "npm-run-all --serial dev:*",
+    "all": "npm-run-all --parallel dev:*",
     "dev:vite": "cd vite-client && npm run dev",
     "dev:nest": "cd nest-server && npm run dev"
   },
