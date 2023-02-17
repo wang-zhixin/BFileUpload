@@ -37,7 +37,9 @@ const submit = async () => {
   // 并发控制切片请求
   await Promise.all(requestList)
   // 发送完成后主动通知后端合并切片
-  await merge(fileName, file.name.substring(file.name.indexOf('.'), file.name.length))
+  setTimeout(() => {
+    merge(fileName, file.name.substring(file.name.indexOf('.'), file.name.length))
+  }, 2000);
 }
 
 </script>
